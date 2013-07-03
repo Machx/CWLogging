@@ -1,5 +1,5 @@
 #CWLogging
-CWLogging is a set of functions that utilize Apples modern loggging asl_log() api's. All of the methods are built around CWLog which takes care of the details of adding STDERR to the file list which log messages are appended to so that they show up in the Xcode console, additionally these api's handle conditionally compiling in logging calls so they show up in the debug builds, but not the release builds. Additionally some API's handle automatically handle prepending the method name and line number to the log message. 
+CWLogging is a set of functions that utilize Apples modern logging asl_log() api's. All of the methods are built around CWLog which takes care of the details of adding STDERR to the file list which log messages are appended to so that they show up in the Xcode console, additionally these api's handle conditionally compiling in logging calls so they show up in the debug builds, but not the release builds. Additionally some API's handle automatically handle prepending the method name and line number to the log message. 
 
 ##Usage
 You can either use `CWLog`/`CWDebugLog` or the CWLog(Info/Warning/etc) methods. The `CWLog()` and `CWDebugLog()` methods will always call `asl_log()` and append your log message to STDERR. Otherwise you can define the macro `CW_LOG_LEVEL` and utilize the methods such as `CWLogInfo()`,`CWLogWarning`,etc and define the `CW_LOG_LEVEL` macro which will make sure that the log messages will be conditionally compiled (or not) into your code.
@@ -37,3 +37,4 @@ CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
 OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ```
+
