@@ -90,7 +90,7 @@
  It also uses ASL's Logging levels to ensure that messages are logged
  appropriately.
  
- @param level the level of the log message, you can use the CWLOG or ASL levels
+ @param level the level of the log message
  @param messageFormat the message to log
  */
 void CWLog(int level, NSString *messageFormat, ...);
